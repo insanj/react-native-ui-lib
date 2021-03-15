@@ -227,7 +227,7 @@ RCT_EXPORT_METHOD(dismissKeyboard)
     }
 }
 
--(void)changeKeyboardHeightForInput:(nonnull NSNumber*)inputFieldTag newHeight:(CGFloat)newHeight
+RCT_EXPORT_METHOD(changeKeyboardHeightForInput:(nonnull NSNumber*)inputFieldTag newHeight:(CGFloat)newHeight)
 {
     UIView* inputField = [self.bridge.uiManager viewForReactTag:inputFieldTag];
     if(inputField != nil)
